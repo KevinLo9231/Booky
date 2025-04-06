@@ -45,3 +45,5 @@ build/
 # Jetty / Tomcat / Web Servers (if any temp deploy folders exist)
 tmp/
 work/
+
+.metadata/
