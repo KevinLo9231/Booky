@@ -1,0 +1,47 @@
+# Java class files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# VS Code settings
+.vscode/
+
+# Build directories
+bin/
+build/
+target/
+out/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Maven
+.mvn/
+!**/src/main/**/mvnw
+!**/src/main/**/mvnw.cmd
+pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# Jetty / Tomcat / Web Servers (if any temp deploy folders exist)
+tmp/
+work/
