@@ -22,7 +22,7 @@
                         <h3>User login</h3>
                     </div>
                     <div class="card-body">
-                        <form class="mb-4" method="post" action="login">
+                        <form class="mb-4" method="post" action="LoginServlet">
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
