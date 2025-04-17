@@ -43,10 +43,12 @@ public class LoginServlet extends HttpServlet {
 					// 登入成功
 					HttpSession session = request.getSession();
 					session.setAttribute("user", username);
-					response.sendRedirect("home.jsp");
+					response.sendRedirect("user/home.jsp");
 				} else {
 					// 登入失敗
-					response.sendRedirect("login.jsp?error=1");
+					//response.sendRedirect("login.jsp?error=1");
+					request.setAttribute("loginFailed", true);
+					request.getRequestDispatcher("auth/login.jsp").forward(request, response);
 				}
 			}
 		} catch (Exception e) {

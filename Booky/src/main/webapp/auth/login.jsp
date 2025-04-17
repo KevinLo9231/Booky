@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.jsp">Booky</a>
+            <a class="navbar-brand" href="/Booky/index.jsp">Booky</a>
         </div>
     </nav>
     <div class="container mt-5">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <c:if test="${param.error == '1'}">
+    <c:if test="${loginFailed}">
         <script>
           window.addEventListener('DOMContentLoaded', () => {
             Swal.fire({
