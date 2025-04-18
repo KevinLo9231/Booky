@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/LoginServlet")
+@WebServlet("/auth/LoginServlet")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 					// 登入成功
 					HttpSession session = request.getSession();
 					session.setAttribute("user", username);
-					response.sendRedirect("user/home.jsp");
+					response.sendRedirect(request.getContextPath() + "/user/home.jsp");
 				} else {
 					// 登入失敗
 					//response.sendRedirect("login.jsp?error=1");
